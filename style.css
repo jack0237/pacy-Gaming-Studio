@@ -1,3 +1,8 @@
+:root{
+    --clr-1: #0c0c0c;
+    --clr-2: #eec6c6;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -5,17 +10,21 @@
 }
 
 .main_nav{
-    
     display: flex;
     justify-content: space-between;
-    background-color: rgb(0, 4, 255);
+    background-color: var(--clr-1);
+    align-items: center;
+    padding: 1rem;
 }
 
-
-
-
+.main_logo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: azure;
+}
 .button {
-    background-color: #4CAF50;
+    background-color: #51ff00;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -23,9 +32,31 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-weight: 700;
     margin: 4px 2px;
     cursor: pointer;
-  }
+}
 
 
 
+.foot {
+    background-color: var(--clr-1);
+}
+.foot p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    padding: 20px;
+}
+
+.main-head{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+#image{
+    height: 5cm;
+    
+}
