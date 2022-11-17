@@ -25,6 +25,7 @@
 }
 .button {
     background-color: #51ff00;
+    box-shadow: 1px 3px 15px 0px #00000066;;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -36,10 +37,16 @@
     margin: 4px 2px;
     cursor: pointer;
 }
+.button:hover{
+    background-color: #47df01;
+}
 
 
 
 .foot {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: var(--clr-1);
 }
 .foot p {
@@ -54,9 +61,25 @@
 .main-head{
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 3rem;
+}
+.main-head .button{
+    display: block;
+    margin-top: 30px;
 }
 #image{
     height: 5cm;
-    
+}
+#download{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 2cm;
+}
+#fp{
+    padding: 5px 5px 5px 5px;
 }
