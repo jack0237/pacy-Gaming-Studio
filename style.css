@@ -1,5 +1,5 @@
 :root{
-    --clr-1: #0c0c0c;
+    --clr-1: #000000;
     --clr-2: #eec6c6;
 }
 
@@ -9,44 +9,65 @@
     border: none;
 }
 
+
 .main_nav{
     display: flex;
     justify-content: space-between;
     background-color: var(--clr-1);
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 0.6rem;
+    justify-items: center;
 }
 
 .main_logo{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
     font-weight: 700;
-    color: azure;
+    color: rgb(235, 235, 235);
+    width: 100%;
+    text-align: center;
+
+    background: -webkit-linear-gradient(0deg,  rgb(252, 252, 252), #bbbbbb );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-.button {
-    background-color: #51ff00;
-    box-shadow: 1px 3px 15px 0px #00000066;;
-    border: none;
-    color: white;
+
+a
+{
+    text-decoration: none;
+}
+
+.button
+{
+    background-color: #16ff16;
+    color: rgb(2, 2, 2);
+    cursor: pointer;
+
+}
+.main_nav .button {
+
     padding: 15px 32px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 16px;
     font-weight: 700;
-    margin: 4px 2px;
-    cursor: pointer;
+    display: none;
+    clip-path: polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px,8px 0);
+
+
 }
 .button:hover{
     background-color: #47df01;
 }
 
 
-
+body
+{
+    background-color: rgb(12, 26, 14);
+    font-family: Arial, Helvetica, sans-serif;
+}
 .foot {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+
     background-color: var(--clr-1);
 }
 .foot p {
@@ -57,15 +78,25 @@
     color: azure;
     padding: 20px;
 }
+header
+{
+    height: 100vh;
+    background-image: url("i.jpg");
 
-.main-head{
+}
+
+.content-wrapper
+{
+    height: 100%;
+    background-color: #0c0c0c99;
+    backdrop-filter: blur(1px);
     display: flex;
-    justify-content: space-between;
-    padding: 3rem;
+    align-items: center;
+    justify-content: center;
 }
 .main-head .button{
     display: block;
-    margin-top: 30px;
+   
 }
 #image{
     height: 5cm;
@@ -82,4 +113,13 @@
 }
 #fp{
     padding: 5px 5px 5px 5px;
+}
+
+header .button
+{
+    padding: 1.3rem 5rem;
+    
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 40px;
 }
