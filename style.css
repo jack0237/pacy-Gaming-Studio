@@ -1,35 +1,24 @@
-:root{
-    --clr-1: #000000;
-    --clr-2: #eec6c6;
-}
-
-*{
-    padding: 0;
+body
+{
+    background-color: black;
+    font-family: sans-serif;
     margin: 0;
-    border: none;
+    
 }
 
-
-.main_nav{
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--clr-1);
-    align-items: center;
-    padding: 1rem 0.6rem;
-    justify-items: center;
+*
+{
+    box-sizing: border-box;
 }
 
-.main_logo{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
-    color: rgb(235, 235, 235);
-    width: 100%;
+header
+{
     text-align: center;
+}
 
-    background: -webkit-linear-gradient(0deg,  rgb(252, 252, 252), #bbbbbb );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+#logo
+{
+    width: 500px;
 }
 
 a
@@ -37,89 +26,69 @@ a
     text-decoration: none;
 }
 
-.button
+nav a
 {
-    background-color: #16ff16;
-    color: rgb(2, 2, 2);
-    cursor: pointer;
-
-}
-.main_nav .button {
-
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 700;
-    display: none;
-    clip-path: polygon(8px 0,100% 0,100% calc(100% - 8px),calc(100% - 8px) 100%,0 100%,0 8px,8px 0);
-
-
-}
-.button:hover{
-    background-color: #47df01;
+    color: gold;
+    margin: 0 20px;
+    font-size: 1rem;
+    font-family: cursive,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-body
+nav a:hover
 {
-    background-color: rgb(12, 26, 14);
-    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid goldenrod;
 }
-.foot {
 
-    background-color: var(--clr-1);
-}
-.foot p {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: azure;
+nav
+{
+    background-color: #111;
     padding: 20px;
-}
-header
-{
-    height: 100vh;
-    background-image: url("i.jpg");
 
 }
 
-.content-wrapper
+.game-logo
 {
-    height: 100%;
-    background-color: #0c0c0c99;
-    backdrop-filter: blur(1px);
+    width: 264px;
+}
+
+.glb
+{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-}
-.main-head .button{
-    display: block;
-   
-}
-#image{
-    height: 5cm;
-}
-#download{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    padding: 2cm;
-}
-#fp{
-    padding: 5px 5px 5px 5px;
 }
 
-header .button
+.content
 {
-    padding: 1.3rem 5rem;
-    
-    font-size: 1.5rem;
-    font-weight: 700;
+    padding: 100px 200px;
+}
+
+h2 {
+    color: white;
+    font-weight: 400;
+    margin: 1rem 0 0.5rem;
+}
+
+ h3 {
+    color: white;
+    font-weight: 300;
+    opacity: 60%;
+    margin-top: 4px;
+}
+
+
+.game-logo
+{
+    border-radius: 30px;
+}
+
+.download-btn
+{
+    color: rgb(255, 255, 255);
+    padding: 20px 30px;
+    font-size: 1.2rem;
     border-radius: 40px;
+    background-color: gold;
+    color: black;
+    font-weight: 600;
 }
