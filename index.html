@@ -1,49 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
     <title>pacy games</title>
 </head>
+
 <body>
-<header>
-
-    <nav>
-        <a href="index.html">acceuil</a>
-        <a href="">nous contacter</a>
-        <a href="about.html">a propos</a>
-    </nav>
-</header>
-<div class="content">
-<section class="games">
-
-    <div class="game">
-        <div class="glb">
-            <div style="display: flex;">
-                <img class="game-logo" src="logo_massa.jpg" alt="">
-                <div style="margin-left:10px;">
-                    <h2>Maua</h2>
-                    <h3>jeux d'aventure epique</h3>
-                </div>
-            </div>
-   
+    <header class=" lg:flex flex fa-column justify-around items-center">
+        <div class=" justify-around items-center">
+            <h1 class=" lg:text-[50px] sm:text-[35px]  ">pacygaming</h1>
+            <span class=" lg:text-[50px] sm:text-[35px] " >Studio</span>
+        </div>
         <div>
-            <a href="" class="download-btn">Jouer maintenant</a>
+            <img src="./images/logo.webp" alt="pacygaming">
         </div>
+    </header>
+    <section class=" h-auto lg:h-[90vh] ">
+        <div class=" lg:pl-[100px] p-[50px] ">
+            <h1 class="flex text-white sm:text-[50px] heading">
+                Welcome to the Next Gamers’ Paradise
+            </h1>
+            <span class=" text-[#ffd400]   lg:pr-[40vw] sm:text-[30px] ">
+                PacyGaming Studio is an unstoppable duo specializing
+                in game development. Our creative team members turn
+                wild ideas into thrilling gaming experiences. Ready
+                for a deep dive into the world of unparalleled
+                immersive games? Join us in our amazing journey
+                to redefine the gaming realm!
+            </span>
         </div>
-        <div class="images">
+    </section>
 
+    <footer class=" bg-[#820263] ">
+        <div>
+            <img src="./images/logo.webp" alt="logo">
+            <h1 class="text-white">
+                &copy; PacyGaming Studio 2023
+            </h1>
+            <p class="text-[#a3a3a3] font-thin ">
+                Deployed on Wednesday, Jully 12, 2023
+            </p>
         </div>
+    </footer>
 
-
-    </div>
-
-
-</section>
-</div>
+    <button class="fixed bottom-4 right-4 bg-white hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <p class="text-black">See our Games</p>
+    </button>
 
 </body>
+
 </html>

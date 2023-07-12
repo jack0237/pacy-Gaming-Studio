@@ -1,94 +1,57 @@
-body
-{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Open+Sans:ital@1&display=swap');
+
+
+body {
     background-color: black;
     font-family: sans-serif;
     margin: 0;
-    
+
 }
 
-*
-{
+* {
     box-sizing: border-box;
 }
 
-header
-{
-    text-align: center;
-}
-
-#logo
-{
-    width: 500px;
-}
-
-a
-{
-    text-decoration: none;
-}
-
-nav a
-{
-    color: gold;
-    margin: 0 20px;
-    font-size: 1rem;
-    font-family: cursive,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-nav a:hover
-{
-    border-bottom: 1px solid goldenrod;
-}
-
-nav
-{
-    background-color: #111;
-    padding: 20px;
-
-}
-
-.game-logo
-{
-    width: 264px;
-}
-
-.glb
-{
-    display: flex;
-    justify-content: space-between;
+header {
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffd400;
+    justify-content: center;
     align-items: center;
+
 }
 
-.content
-{
-    padding: 100px 200px;
+header>div>h1 {
+    
+    font-family: "Climate Crisis", sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
 }
 
-h2 {
-    color: white;
-    font-weight: 400;
-    margin: 1rem 0 0.5rem;
+header>div>span {
+    font-size: 60px;
+    text-transform: capitalize;
 }
 
- h3 {
-    color: white;
-    font-weight: 300;
-    opacity: 60%;
-    margin-top: 4px;
+header>div>img {
+    width: 15rem;
+
 }
 
-
-.game-logo
-{
-    border-radius: 30px;
+.heading{
+    font-family: "Climate Crisis", sans-serif;
+    text-transform: uppercase;
 }
 
-.download-btn
-{
-    color: rgb(255, 255, 255);
-    padding: 20px 30px;
-    font-size: 1.2rem;
-    border-radius: 40px;
-    background-color: gold;
-    color: black;
-    font-weight: 600;
+footer > div > img{
+    width: 15rem;
+    padding-bottom: 30px;
+}
+footer > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem;
 }
