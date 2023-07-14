@@ -22,6 +22,10 @@ header {
 
 }
 
+h1{
+    font-family:  "Climate Crisis", sans-serif;
+}
+
 header>div>h1 {
     
     font-family: "Climate Crisis", sans-serif;
@@ -54,4 +58,5 @@ footer > div {
     justify-content: center;
     align-items: center;
     padding: 7rem;
+    height: auto;
 }
